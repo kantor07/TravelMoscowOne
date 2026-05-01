@@ -1,5 +1,7 @@
 /* variables */
-$primory-color: #03a9f4;
+$primory-color: #7b3f00;
+$border-primory-color: #03a9f4;
+$main-background-color: #fff6ef;
 
 /* mixin */
 @import "mixin.scss";
@@ -36,7 +38,7 @@ $primory-color: #03a9f4;
   @include basic-btn();
 
   &:hover .item-link-title {
-    color: $primory-color;
+    color: $border-primory-color;
   }
 }
 

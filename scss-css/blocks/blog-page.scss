@@ -1,5 +1,7 @@
 /* variables */
-$primory-color: #03a9f4;
+$primory-color: #7b3f00;
+$border-primory-color: #03a9f4;
+$main-background-color: #fff6ef;
 
 /*mixin */
 @import "mixin.scss";
@@ -41,7 +43,7 @@ $primory-color: #03a9f4;
   width: 20px;
   height: 20px;
   background: url("../img/icon-arrow-down.png") no-repeat;
-  background-size: 60%;
+  background-size: 80%;
   padding-right: 0.5em;
   display: inline-block;
 }
@@ -53,7 +55,7 @@ $primory-color: #03a9f4;
   height: 20px;
   background: url("../img/icon-arrow-up.png") no-repeat;
 
-  background-size: 60%;
+  background-size: 80%;
   padding-right: 0.5em;
   display: inline-block;
 }
@@ -62,7 +64,7 @@ $primory-color: #03a9f4;
 
 .blog-desc {
   padding-top: 50px;
-  @include font(16px);
+  @include font(18px);
 }
 
 /* section block imgs */
@@ -78,9 +80,10 @@ $primory-color: #03a9f4;
   margin-bottom: 20px;
 
   width: 240px;
-  height: 220px;
+  height: auto;
 
   transition: 0.5s;
+  img-size: 100%;
 }
 
 .block-img-line {

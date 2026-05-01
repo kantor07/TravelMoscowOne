@@ -6,7 +6,7 @@ $main-background-color: #fff6ef;
 /* mixin */
 @import "mixin.scss";
 
-.container.container-main-info {
+.container-main-info {
   background-color: $main-background-color;
   display: flex;
   align-items: center;

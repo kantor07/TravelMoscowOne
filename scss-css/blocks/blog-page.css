@@ -35,7 +35,7 @@
   width: 20px;
   height: 20px;
   background: url("../img/icon-arrow-down.png") no-repeat;
-  background-size: 60%;
+  background-size: 80%;
   padding-right: 0.5em;
   display: inline-block;
 }
@@ -45,7 +45,7 @@
   width: 20px;
   height: 20px;
   background: url("../img/icon-arrow-up.png") no-repeat;
-  background-size: 60%;
+  background-size: 80%;
   padding-right: 0.5em;
   display: inline-block;
 }
@@ -54,7 +54,7 @@
 .blog-desc {
   padding-top: 50px;
   font-family: "Gabriela", serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   font-style: normal;
   color: black;
@@ -72,8 +72,9 @@
 .block-img {
   margin-bottom: 20px;
   width: 240px;
-  height: 220px;
+  height: auto;
   transition: 0.5s;
+  img-size: 100%;
 }
 
 .block-img-line {

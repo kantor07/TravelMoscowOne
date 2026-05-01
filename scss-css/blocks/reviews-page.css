@@ -74,7 +74,7 @@
   font-style: normal;
   color: black;
   border: none;
-  outline: 1px solid #7b3f00;
+  outline: 1px solid #03a9f4;
   border-radius: 5px;
 }
 
@@ -131,7 +131,7 @@
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
-  color: #7b3f00;
+  color: #03a9f4;
 }
 
 @media (min-width: 420px) {

@@ -1,5 +1,7 @@
 /* variables */
-$primory-color: #03a9f4;
+$primory-color: #7b3f00;
+$border-primory-color: #03a9f4;
+$main-background-color: #fff6ef;
 
 /*mixin */
 @import "mixin.scss";
@@ -76,7 +78,7 @@ $primory-color: #03a9f4;
   @include font();
 
   border: none;
-  outline: 1px solid $primory-color;
+  outline: 1px solid $border-primory-color;
   border-radius: 5px;
 }
 
@@ -101,7 +103,7 @@ $primory-color: #03a9f4;
 .review-form-btn {
   border: none;
   @include basic-btn(120px, 50px);
-  @include font(18px, $primory-color);
+  @include font(18px, $border-primory-color);
 }
 
 @media (min-width: 420px) {
