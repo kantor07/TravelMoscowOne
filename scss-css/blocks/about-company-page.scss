@@ -1,0 +1,37 @@
+/* variables */
+$primory-color: #7b3f00;
+$border-primory-color: #03a9f4;
+$main-background-color: #fff6ef;
+
+/* mixin */
+@import "mixin.scss";
+.text-item-about-company {
+  padding: 50px 0px;
+  @include font(20px);
+}
+
+.info-img {
+  height: 100%;
+  width: 100%;
+}
+
+.desc-title-about-company {
+  padding: 30px 0px;
+  @include font(20px, $primory-color);
+  font-weight: 600;
+}
+
+.desc-text-item-about-company li {
+  padding-bottom: 20px;
+}
+
+.desc-list {
+  list-style-type: circle;
+}
+
+@media (min-width: 620px) {
+  .container-about-company {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
