@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отзывы</title>
+
+    <!-- Bootstrap CSS для карусели -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabriela&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Свои стили -->
+    <link rel="stylesheet" href="scss-css/style.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="container header-container">
+        <nav class="nav">
+          <div class="logo">
+            <a href="./index.html" class="logo-href">
+              <span class="title">Московские экскурсии</span>
+            </a>
+          </div>
+          <div class="main-nav">
+            <button class="burger" type="button" title="burger-btn">
+              <span></span>
+            </button>
+
+            <div class="header-menu">
+              <section class="drop-menu">
+                <h3 class="hidden-section">section drop menu</h3>
+                <ul class="menu">
+                  <li class="menu-list">
+                    <details class="list">
+                      <summary class="link-list">Экскурсии</summary>
+                      <div class="list-menu">
+                        <a href="./categoryPage.html" class="menu-link"
+                          >1-4 классы</a
+                        >
+                        <a href="./categoryPage.html" class="menu-link"
+                          >5-9 классы</a
+                        >
+                        <a href="./categoryPage.html" class="menu-link"
+                          >10-11 классы</a
+                        >
+                      </div>
+                    </details>
+                  </li>
+                  <li class="menu-list">
+                    <a href="./blogPage.html" class="menu-link">Блог</a>
+                  </li>
+                  <li class="menu-list">
+                    <a href="./reviewsPage.html" class="menu-link">Отзывы</a>
+                  </li>
+                  <li class="menu-list">
+                    <a href="./galleryPage.html" class="menu-link">Галерея</a>
+                  </li>
+                  <!--li class="menu-list">
+                    <a href="#" class="menu-link">Экскурсоводы</a>
+                  </li!-->
+                  <li class="menu-list">
+                    <a href="#" class="menu-link">О компании</a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="breadcrumbles">
+      <h3 class="hidden-section">section breadcrumbles</h3>
+      <div class="container">
+        <ul class="menu-breadcrumbles">
+          <li class="menu-list-breadcrumbles">
+            <a href="./index.html" class="menu-link-breadcrumbles">Главная</a>
+            <span class="arrow-menu-breadcrumbles"> </span>
+          </li>
+
+          <li class="menu-list-breadcrumbles">
+            <a href="#" class="menu-link-breadcrumbles-bold">Отзывы</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <main class="main reviews-page-container">
+      <h1 class="hidden-section">Welcome to School Excursions reviews page</h1>
+
+      <div class="container">
+        <div class="review-form-container">
+          <div class="add-review">
+            <button type="button" class="btn-add-review" title="btn-add">
+              <img
+                src="./img/icon-plus.png"
+                class="add-review-icon"
+                alt="add-review-icon"
+              />
+            </button>
+            <div class="add-review-form">
+              <h2 class="reviews-title">Оставить отзыв</h2>
+              <form action="#" class="review-form">
+                <input
+                  type="text"
+                  class="input-form"
+                  placeholder="Ваше имя"
+                  id="form-review-author-name"
+                />
+                <input
+                  type="tel"
+                  class="input-form"
+                  placeholder="Ваш номер телефона (не публикуется)"
+                  id="form-review-author-tel"
+                />
+                <input
+                  type="text"
+                  class="input-form"
+                  placeholder="Название экскурсии"
+                  id="form-review-guide-name"
+                />
+                <textarea
+                  class="textea-form"
+                  placeholder="Ваш отзыв"
+                  name="review-desc"
+                  id="form-review-text-desc"
+                  rows="10"
+                  cols="30"
+                  spellcheck="true"
+                  wrap="hard"
+                ></textarea>
+                <div class="form-btn">
+                  <input
+                    type="submit"
+                    class="review-form-btn"
+                    id="form-review-btn-submit"
+                    value="Отправить"
+                  />
+
+                  <input
+                    type="reset"
+                    class="review-form-btn"
+                    id="form-review-btn-reset"
+                    value="Отмена"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-list">
+          <div class="review-cart">
+            <h2 class="review-author-name">Петров Петр Петрович</h2>
+            <h2 class="item-name">Мир глазами историка</h2>
+            <!--
+              <h6 class="guide-name">
+                <span class="span-guide-name">Гид:</span>
+                Иванов Иван Иванович
+              </h6>!
+            -->
+            <p class="review-text">
+              Немного быстрого примера текста для построения на заголовке
+              карточки и составления основной части содержимого карточки.
+              Немного быстрого примера текста для построения на заголовке
+              карточки и составления основной части содержимого карточки.
+              Немного быстрого примера текста для построения на заголовке
+              карточки и составления основной части содержимого карточки.
+              Немного быстрого примера текста для построения на заголовке
+              карточки и составления основной части содержимого карточки.
+            </p>
+            <p class="review-date">28.11.2025</p>
+          </div>
+          <div class="review-cart">
+            <h2 class="review-author-name">Петров Петр Петрович</h2>
+            <h2 class="item-name">Мир глазами историка</h2>
+            <!--
+              <h6 class="guide-name">
+                <span class="span-guide-name">Гид:</span>
+                Иванов Иван Иванович
+              </h6>!
+            -->
+            <p class="review-text">
+              Немного быстрого примера текста для построения на заголовке
+              карточки и составления основной части содержимого карточки.
+              Немного быстрого примера текста для построения на заголовке
+              карточки и составления основной части содержимого карточки.
+            </p>
+            <p class="review-date">28.11.2025</p>
+          </div>
+          <div class="review-cart">
+            <h2 class="review-author-name">Петров Петр Петрович</h2>
+            <h2 class="item-name">Мир глазами историка</h2>
+            <!--
+              <h6 class="guide-name">
+                <span class="span-guide-name">Гид:</span>
+                Иванов Иван Иванович
+              </h6>!
+            -->
+            <p class="review-text">
+              Немного быстрого примера текста для построения на заголовке
+              карточки и составления основной части содержимого карточки.
+              Немного быстрого примера текста для построения на заголовке
+              карточки и составления основной части содержимого карточки.
+            </p>
+            <p class="review-date">28.11.2025</p>
+          </div>
+          <div class="review-cart">
+            <h2 class="review-author-name">Петров Петр Петрович</h2>
+            <h2 class="item-name">Мир глазами историка</h2>
+            <!--
+              <h6 class="guide-name">
+                <span class="span-guide-name">Гид:</span>
+                Иванов Иван Иванович
+              </h6>!
+            -->
+            <p class="review-text">
+              Немного быстрого примера текста для построения на заголовке
+              карточки и составления основной части содержимого карточки.
+              Немного быстрого примера текста для построения на заголовке
+              карточки и составления основной части содержимого карточки.
+            </p>
+            <p class="review-date">28.11.2025</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <nav class="nav">
+            <div class="logo">
+              <a href="./index.html" class="logo-href">
+                <span class="title">Московские экскурсии</span>
+              </a>
+            </div>
+
+            <div class="footer-menu">
+              <ul class="menu">
+                <li class="footer-menu-list">
+                  <a href="./reviewsPage.html" class="menu-link">Отзывы</a>
+                </li>
+                <li class="footer-menu-list">
+                  <a href="#" class="menu-link">О компании</a>
+                </li>
+                <li class="footer-menu-list">
+                  <img
+                    class="icon-img"
+                    src="img/icon-telegram.png"
+                    alt="icon"
+                  />
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <p class="info">VIS© 2025</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
