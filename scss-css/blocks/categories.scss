@@ -83,18 +83,33 @@ $main-background-color: #fff6ef;
   object-position: center;
 }
 
-.primary-school-img {
+.school-img {
   background: url(../img/main-img.jpg) center no-repeat;
   background-size: 120%;
 }
 
-.high-school-img {
+.primary-school-img {
+  background: url(../img/primary-school-img.png) center no-repeat;
+  background-size: 120%;
+}
+
+.woman-img {
   background: url(../img/moscow.png) center no-repeat;
   background-size: 150%;
 }
 
-.graduation-school-img {
+.high-school-img {
+  background: url(../img/high-school-img.jpg) center no-repeat;
+  background-size: 120%;
+}
+
+.company-img {
   background: url(../img/main-info-img2.jpg) center no-repeat;
+  background-size: 120%;
+}
+
+.graduation-school-img {
+  background: url(../img/graduation-school-img.jpg) center no-repeat;
   background-size: 120%;
 }
 

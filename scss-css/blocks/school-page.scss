@@ -1,0 +1,81 @@
+/* variables */
+$primory-color: #7b3f00;
+$border-primory-color: #03a9f4;
+$main-background-color: #fff6ef;
+
+/* mixin */
+@import "mixin.scss";
+
+.container.container-main-info {
+  background-color: $main-background-color;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-info-img {
+  width: 280px;
+  object-fit: cover;
+
+  align-self: center;
+}
+
+.link-choose-item {
+  margin-bottom: 50px;
+
+  @include basic-btn(220px, 80px);
+
+  &:hover .item-link-title {
+    color: $border-primory-color;
+  }
+}
+
+.item-link-title {
+  @include font(18px);
+
+  transition: 1s;
+}
+
+.info-title-main,
+.desc-title-main {
+  @include font(20px);
+}
+
+.info-desc-main,
+.text-item-main {
+  @include font();
+
+  /* padding: 20px 0px;*/
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  align-content: center;
+}
+
+.text-item-main {
+  padding: 50px 20px;
+}
+
+.info-title-main {
+  text-align: center;
+}
+
+@media (min-width: 620px) {
+  .container-main-info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .info-desc-main-info {
+    padding: 20px;
+  }
+
+  .info-img-main-info {
+    padding-top: 20px;
+
+    width: 350px;
+  }
+}

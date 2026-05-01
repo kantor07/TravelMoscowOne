@@ -312,44 +312,6 @@
   text-align: center;
 }
 
-.link-choose-item {
-  width: 220px;
-  height: 80px;
-  display: block;
-  align-content: center;
-  text-align: center;
-  text-decoration: none;
-  background-color: #ffffff;
-  outline: 2px solid #03a9f4;
-  border-radius: 16px;
-  border-bottom: outset;
-  transition: 1s;
-}
-.link-choose-item:hover {
-  outline: 2px solid #ffffff;
-  box-shadow: 3px 3px 3px 3px #03a9f4;
-  border-bottom: none;
-}
-.link-choose-item:hover .item-link-title {
-  color: #03a9f4;
-}
-
-.item-link-title {
-  font-family: "Gabriela", serif;
-  font-size: 18px;
-  font-weight: 400;
-  font-style: normal;
-  color: black;
-  transition: 1s;
-}
-
-.main-info-img {
-  width: 280px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  align-self: center;
-}
-
 @media (min-width: 620px) {
   .main-info-container {
     flex-direction: row;
@@ -357,10 +319,6 @@
   }
   .main-info-desc {
     padding: 20px;
-  }
-  .main-info-img {
-    padding-top: 20px;
-    width: 350px;
   }
 }
 /* section categories */
@@ -440,18 +398,33 @@
      object-position: center;
 }
 
-.primary-school-img {
+.school-img {
   background: url(../img/main-img.jpg) center no-repeat;
   background-size: 120%;
 }
 
-.high-school-img {
+.primary-school-img {
+  background: url(../img/primary-school-img.png) center no-repeat;
+  background-size: 120%;
+}
+
+.woman-img {
   background: url(../img/moscow.png) center no-repeat;
   background-size: 150%;
 }
 
-.graduation-school-img {
+.high-school-img {
+  background: url(../img/high-school-img.jpg) center no-repeat;
+  background-size: 120%;
+}
+
+.company-img {
   background: url(../img/main-info-img2.jpg) center no-repeat;
+  background-size: 120%;
+}
+
+.graduation-school-img {
+  background: url(../img/graduation-school-img.jpg) center no-repeat;
   background-size: 120%;
 }
 
@@ -1267,6 +1240,102 @@
   block-img-line,
   .block-img {
     width: 320px;
+  }
+}
+/* school page */
+/* variables */
+/* mixin */
+/* variables */
+/* mixin */
+.container.container-main-info {
+  background-color: #fff6ef;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-info-img {
+  width: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  align-self: center;
+}
+
+.link-choose-item {
+  margin-bottom: 50px;
+  width: 220px;
+  height: 80px;
+  display: block;
+  align-content: center;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffffff;
+  outline: 2px solid #03a9f4;
+  border-radius: 16px;
+  border-bottom: outset;
+  transition: 1s;
+}
+.link-choose-item:hover {
+  outline: 2px solid #ffffff;
+  box-shadow: 3px 3px 3px 3px #03a9f4;
+  border-bottom: none;
+}
+.link-choose-item:hover .item-link-title {
+  color: #03a9f4;
+}
+
+.item-link-title {
+  font-family: "Gabriela", serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  transition: 1s;
+}
+
+.info-title-main,
+.desc-title-main {
+  font-family: "Gabriela", serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+
+.info-desc-main,
+.text-item-main {
+  font-family: "Gabriela", serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  /* padding: 20px 0px;*/
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+.text-item-main {
+  padding: 50px 20px;
+}
+
+.info-title-main {
+  text-align: center;
+}
+
+@media (min-width: 620px) {
+  .container-main-info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .info-desc-main-info {
+    padding: 20px;
+  }
+  .info-img-main-info {
+    padding-top: 20px;
+    width: 350px;
   }
 }
 /* footer */

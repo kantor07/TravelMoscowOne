@@ -41,27 +41,6 @@ $main-background-color: #fff6ef;
   text-align: center;
 }
 
-.link-choose-item {
-  @include basic-btn(220px, 80px);
-
-  &:hover .item-link-title {
-    color: $border-primory-color;
-  }
-}
-
-.item-link-title {
-  @include font(18px);
-
-  transition: 1s;
-}
-
-.main-info-img {
-  width: 280px;
-  object-fit: cover;
-
-  align-self: center;
-}
-
 @media (min-width: 620px) {
   .main-info-container {
     flex-direction: row;
@@ -70,11 +49,5 @@ $main-background-color: #fff6ef;
 
   .main-info-desc {
     padding: 20px;
-  }
-
-  .main-info-img {
-    padding-top: 20px;
-
-    width: 350px;
   }
 }

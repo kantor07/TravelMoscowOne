@@ -1,0 +1,95 @@
+/* variables */
+/* mixin */
+/* variables */
+/* mixin */
+.container.container-main-info {
+  background-color: #fff6ef;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-info-img {
+  width: 280px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  align-self: center;
+}
+
+.link-choose-item {
+  margin-bottom: 50px;
+  width: 220px;
+  height: 80px;
+  display: block;
+  align-content: center;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffffff;
+  outline: 2px solid #03a9f4;
+  border-radius: 16px;
+  border-bottom: outset;
+  transition: 1s;
+}
+.link-choose-item:hover {
+  outline: 2px solid #ffffff;
+  box-shadow: 3px 3px 3px 3px #03a9f4;
+  border-bottom: none;
+}
+.link-choose-item:hover .item-link-title {
+  color: #03a9f4;
+}
+
+.item-link-title {
+  font-family: "Gabriela", serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  transition: 1s;
+}
+
+.info-title-main,
+.desc-title-main {
+  font-family: "Gabriela", serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+
+.info-desc-main,
+.text-item-main {
+  font-family: "Gabriela", serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  /* padding: 20px 0px;*/
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+.text-item-main {
+  padding: 50px 20px;
+}
+
+.info-title-main {
+  text-align: center;
+}
+
+@media (min-width: 620px) {
+  .container-main-info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .info-desc-main-info {
+    padding: 20px;
+  }
+  .info-img-main-info {
+    padding-top: 20px;
+    width: 350px;
+  }
+}/*# sourceMappingURL=school-page.css.map */
