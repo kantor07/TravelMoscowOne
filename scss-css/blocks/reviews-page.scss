@@ -1,0 +1,121 @@
+/* variables */
+$primory-color: #03a9f4;
+
+/*mixin */
+@import "mixin.scss";
+
+.reviews-page-container {
+  padding: 50px 0px;
+}
+
+.reviews-list {
+  margin: 20px;
+}
+
+/* форма отзыва */
+
+.review-form-container {
+  display: flex;
+  justify-content: end;
+}
+
+.add-review {
+  position: relative;
+
+  width: 20px;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+.btn-add-review {
+  border: none;
+  background-color: #ffffff;
+}
+
+.add-review {
+  &:hover .add-review-form {
+    transform: scale(1, 1);
+  }
+
+  &:hover .btn-add-review {
+    transform: rotate(45deg);
+  }
+}
+
+.add-review-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.add-review-form {
+  margin-top: 10px;
+
+  position: absolute;
+  right: 10px;
+
+  @include border-blue(280px, 550px);
+  display: block;
+
+  background-color: #ffffff;
+
+  transform: scale(0, 0);
+  transform-origin: right top;
+  transition: 0.5s;
+}
+
+.input-form,
+.textea-form {
+  padding: 10px;
+
+  @include font();
+
+  border: none;
+  outline: 1px solid $primory-color;
+  border-radius: 5px;
+}
+
+.input-form::placeholder,
+.textea-form::placeholder {
+  padding: 10px;
+
+  @include font(16px, #7b7873);
+}
+
+.textea-form {
+  resize: none;
+}
+
+.form-btn {
+  padding-top: 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-form-btn {
+  border: none;
+  @include basic-btn(120px, 50px);
+  @include font(18px, $primory-color);
+}
+
+@media (min-width: 420px) {
+  .add-review-form {
+    width: 390px;
+  }
+
+  .review-form-btn {
+    width: 180px;
+  }
+}
+
+@media (min-width: 620px) {
+  .add-review {
+    width: 40px;
+  }
+}

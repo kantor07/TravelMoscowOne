@@ -1,0 +1,57 @@
+/* variables */
+$primory-color: #03a9f4;
+$main-background-color: #fff6ef;
+/* $main-background-color: #d7dcdf; */
+
+/* mixin */
+@import "mixin.scss";
+
+.footer {
+  background-color: $main-background-color;
+}
+
+.footer-container {
+  padding-top: 10px;
+}
+
+.info {
+  margin: 0px;
+
+  @include font(8px);
+}
+
+.footer-menu {
+  padding-top: 10px;
+}
+
+.icon-img {
+  width: 20px;
+  height: 20px;
+  color: #03a9f4;
+}
+
+.footer-menu-list:nth-child(1),
+.footer-menu-list:nth-child(2) {
+  display: none;
+}
+
+@media (min-width: 620px) {
+  .info {
+    font-size: 10px;
+  }
+
+  .icon-img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footer-menu {
+    padding-top: 20px;
+    min-width: 450px;
+  }
+
+  .footer-menu-list:nth-child(1),
+  .footer-menu-list:nth-child(2) {
+    display: block;
+  }
+}

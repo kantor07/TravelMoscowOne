@@ -1,0 +1,75 @@
+/* mixin */
+@import "blocks/mixin.scss";
+
+/* header */
+@import "blocks/header.scss";
+
+/* section breadcrumbles */
+@import "blocks/breadcrumbles.scss";
+
+/* main */
+@import "blocks/main.scss";
+
+/* section categories */
+@import "blocks/categories.scss";
+
+/* section category page */
+@import "blocks/category-page.scss";
+
+/* section reviews */
+@import "blocks/reviews.scss";
+
+/* section reviews page */
+@import "blocks/reviews-page.scss";
+
+/* section gallery */
+@import "blocks/gallery.scss";
+
+/* section gallery page*/
+@import "blocks/gallery-page.scss";
+
+/* section blog page */
+@import "blocks/blog-page.scss";
+
+/* footer */
+@import "blocks/footer.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+
+  /* outline: 1px solid red; */
+}
+
+.hidden-section {
+  @include hidden();
+}
+
+.container {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  /* outline: 1px solid blue; */
+}
+
+.main {
+  flex-grow: 1;
+  /* outline: 5px solid green; */
+}
+
+@media (min-width: 620px) {
+  .container {
+    padding: 0px 0px;
+  }
+}

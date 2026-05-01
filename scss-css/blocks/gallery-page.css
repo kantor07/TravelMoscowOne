@@ -1,0 +1,65 @@
+/* variables */
+/* $main-background-color: #d7dcdf; */
+/* mixin */
+/* variables */
+/* mixin */
+.gallery-page-container {
+  padding: 50px 0px;
+  display: flex;
+  text-align: center;
+}
+
+.gallery-img,
+.gallery-line {
+  margin: 20px;
+  width: 300px;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.gallery-img {
+  border-radius: 16px;
+}
+
+.gallery-link {
+  width: 220px;
+  height: 50px;
+  display: contents;
+  text-decoration: none;
+  transition: 1s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery-link-title {
+  font-family: "Gabriela", serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+
+.mfp-title,
+.mfp-counter {
+  font-family: "Gabriela", serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: #7b3f00;
+}
+
+.mfp-zoom-out-cur,
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+  color: #7b3f00;
+}
+
+@media (min-width: 620px) {
+  .gallery-page-container {
+    padding: 50px 10px;
+  }
+}
+@media (min-width: 700px) {
+  .gallery-page-container {
+    padding: 50px 50px;
+  }
+}/*# sourceMappingURL=gallery-page.css.map */

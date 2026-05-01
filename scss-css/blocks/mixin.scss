@@ -1,0 +1,69 @@
+/* variables */
+$primory-color: #7b3f00;
+$border-primory-color: #03a9f4;
+
+/* mixin */
+@mixin hidden($width: 1px, $height: 1px) {
+  position: absolute;
+  left: -9999px;
+  width: $width;
+  height: $height;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@mixin font($size: 16px, $color: black) {
+  font-family: "Gabriela", serif;
+  font-size: $size;
+  font-weight: 400;
+  font-style: normal;
+
+  color: $color;
+}
+
+@mixin font-logo($size: 25px, $color: $primory-color) {
+  /*font-family: "Great Vibes";*/
+  @include font($size, $color);
+
+  line-height: 0.65;
+  font-weight: 600;
+}
+
+@mixin border-blue($width: 265px, $height: 100px) {
+  padding: 10px;
+
+  width: $width;
+  min-height: $height;
+
+  border-radius: 16px;
+
+  outline: 1px solid $border-primory-color;
+
+  display: flex;
+  justify-content: space-between;
+
+  align-content: center;
+}
+
+@mixin basic-btn($width: 265px, $height: 100px) {
+  width: $width;
+  height: $height;
+
+  display: block;
+  align-content: center;
+  text-align: center;
+
+  text-decoration: none;
+
+  background-color: #ffffff;
+  outline: 2px solid $border-primory-color;
+  border-radius: 16px;
+  border-bottom: outset;
+  transition: 1s;
+
+  &:hover {
+    outline: 2px solid #ffffff;
+    box-shadow: 3px 3px 3px 3px $border-primory-color;
+    border-bottom: none;
+  }
+}

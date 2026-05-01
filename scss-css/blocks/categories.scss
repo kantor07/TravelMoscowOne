@@ -1,0 +1,126 @@
+/* variables */
+$primory-color: #03a9f4;
+$main-background-color: #fff6ef;
+/* $main-background-color: #d7dcdf; */
+
+/* mixin */
+@import "mixin.scss";
+
+/* section categories */
+
+.categories {
+  padding: 50px 20px;
+  margin: 0px 10px 50px 10px;
+
+  display: flex;
+  justify-content: center;
+
+  border-radius: 16px;
+  background-color: $main-background-color;
+}
+
+.categories-container {
+  min-width: 280px;
+}
+
+.categories-title {
+  padding-bottom: 50px;
+
+  @include font(20px, $primory-color);
+
+  text-align: center;
+}
+
+.categoties-list {
+  padding: 0px;
+
+  display: flex;
+
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  list-style-type: none;
+}
+
+.category-line {
+  padding: 0px 20px 20px 0px;
+}
+
+.category-link {
+  text-decoration: none;
+  transition: 0.5s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:hover .category-cart {
+    transform: scale(1.2);
+  }
+}
+
+/* category-cart */
+
+.category-cart,
+.primary-school-img,
+.school-img,
+.graduation school-img {
+  width: 280px;
+  height: 200px;
+
+  border-radius: 16px;
+  transition: 0.5s;
+}
+
+.category-cart {
+  padding-top: 10px;
+}
+
+.primary-school-img,
+.school-img,
+.graduation-school-img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.primary-school-img {
+  background: url(../img/main-img.jpg) center no-repeat;
+  background-size: 120%;
+}
+
+.high-school-img {
+  background: url(../img/moscow.png) center no-repeat;
+  background-size: 150%;
+}
+
+.graduation-school-img {
+  background: url(../img/main-info-img2.jpg) center no-repeat;
+  background-size: 120%;
+}
+
+.category-title {
+  padding: 10px;
+  width: 65%;
+
+  @include font(20px, $primory-color);
+  background-color: #ffffff;
+
+  text-align: center;
+}
+
+@media (min-width: 620px) {
+  .category-cart {
+    margin-left: 10px;
+    width: 380px;
+  }
+}
+
+@media (min-width: 700px) {
+  .category-cart {
+    width: 310px;
+  }
+
+  .category-line {
+    padding: 0px 0px 20px 0px;
+  }
+}

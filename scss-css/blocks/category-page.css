@@ -1,0 +1,250 @@
+/* variables */
+/* mixin */
+/* variables */
+/* mixin */
+/* items */
+.items-container {
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* item cart */
+.item-cart {
+  margin-bottom: 30px;
+  width: 280px;
+  /*shadow */
+  outline: 1px solid #d6d3d3;
+  border-bottom: 2px solid #c4c2c2;
+  border-radius: 16px;
+}
+
+.link-item-cart-desc {
+  position: absolute;
+  top: -1000px;
+  opacity: 0;
+  text-decoration: none;
+}
+
+.item-cart-desc,
+.item-title {
+  font-family: "Gabriela", serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  color: #7b3f00;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-title,
+.item-title-details {
+  padding: 10px 20px;
+}
+
+.item-cart-desc {
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.item-cart-img {
+  width: 100%;
+  height: 200px;
+  background: url(../img/item-primary-school-science4.jpeg) center no-repeat;
+  background-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.item-title-details::-webkit-details-marker {
+  display: none;
+}
+
+.item-title-details {
+  list-style: none;
+  transition: 1s;
+}
+
+.item-title-details::after {
+  margin: 10px 0px 0px 10px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url("../img/icon-arrow-down.png") no-repeat;
+  background-size: 60%;
+  padding-right: 0.5em;
+  display: inline-block;
+}
+
+.item-list[open] > summary::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url("../img/icon-arrow-up.png") no-repeat;
+  background-size: 60%;
+  padding-right: 0.5em;
+  display: inline-block;
+}
+
+.item-list[open] {
+  border-radius: 16px 16px 0px 0px;
+}
+
+/* section item desc */
+.item-desc {
+  font-family: "Gabriela", serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+
+.item-text {
+  padding: 50px 20px;
+  font-size: 16px;
+}
+
+.basic-info {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.basic-info-list {
+  padding: 10px;
+  width: 265px;
+  min-height: 100px;
+  border-radius: 16px;
+  outline: 1px solid #03a9f4;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 20px;
+}
+
+.items-link {
+  width: 265px;
+  height: 100px;
+  display: block;
+  align-content: center;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffffff;
+  outline: 2px solid #03a9f4;
+  border-radius: 16px;
+  border-bottom: outset;
+  transition: 1s;
+}
+.items-link:hover {
+  outline: 2px solid #ffffff;
+  box-shadow: 3px 3px 3px 3px #03a9f4;
+  border-bottom: none;
+}
+.items-link:hover .item-link-title {
+  color: #7b3f00;
+}
+
+.item-link-title {
+  font-family: "Gabriela", serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  transition: 1s;
+}
+
+.basic-info-icon {
+  margin: 20px 0px 0px 5px;
+}
+
+.item-desc-img,
+.basic-info-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.item-desc-title {
+  padding: 25px 5px 5px 5px;
+}
+
+.item-desc-text {
+  width: 200px;
+  flex-grow: 1;
+  text-align: end;
+  align-content: center;
+  font-weight: 600;
+}
+
+/* item desc list */
+.item-desc-table {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item-desc-list {
+  padding: 10px 0px;
+}
+
+.item-desc-list-title {
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+@media (min-width: 420px) {
+  .item-cart {
+    width: 380px;
+  }
+}
+@media (min-width: 620px) {
+  .items-cart {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .item-cart {
+    margin: 10px;
+    width: 500px;
+  }
+  .item-list[open] > summary::after {
+    background-size: 70%;
+  }
+  .item-title-details::after {
+    background-size: 70%;
+  }
+  .basic-info-list,
+  .items-link {
+    margin: 0px 0px 20px 20px;
+    width: 300px;
+  }
+}
+@media (min-width: 700px) {
+  .item-cart {
+    width: 310px;
+    margin: 0px 20px 20px 0px;
+  }
+  .item-cart-details {
+    position: absolute;
+    opacity: 0;
+  }
+  .link-item-cart-desc {
+    position: relative;
+    top: 0;
+    opacity: 1;
+  }
+  .item-title-details::after {
+    background: none;
+  }
+}
+@media (min-width: 1100px) {
+  .item-cart {
+    width: 500px;
+  }
+}/*# sourceMappingURL=category-page.css.map */

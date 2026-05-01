@@ -1,0 +1,51 @@
+/* variables */
+$primory-color: #03a9f4;
+
+/* mixin */
+@import "mixin.scss";
+
+/* breadcrumbles */
+.breadcrumbles {
+  margin: 10px 0px;
+}
+
+.menu-breadcrumbles {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.menu-link-breadcrumbles,
+.menu-link-breadcrumbles-bold {
+  @include font(14px);
+
+  text-decoration: none;
+
+  &:hover {
+    color: #000000;
+  }
+
+  &:active {
+    color: #000000;
+  }
+}
+
+.menu-link-breadcrumbles-bold {
+  color: #000000;
+}
+
+.menu-link-breadcrumbles {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.arrow-menu-breadcrumbles {
+  display: inline-block;
+
+  width: 15px;
+  height: 10px;
+
+  background: url("../img/icon-arrow-right.png") no-repeat;
+
+  background-size: 70%;
+}

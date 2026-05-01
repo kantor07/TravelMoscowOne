@@ -1,0 +1,80 @@
+/* variables */
+$primory-color: #7b3f00;
+$border-primory-color: #03a9f4;
+$main-background-color: #fff6ef;
+
+/* mixin */
+@import "mixin.scss";
+
+.main-info-container {
+  height: 200px;
+  background: url(../img/main-img.jpg) no-repeat;
+  background-size: 100%;
+
+  /* outline: 1px solid green; */
+}
+
+.main-info-title,
+.desc-title {
+  @include font(20px);
+}
+
+.main-info-desc,
+.main-text-item {
+  @include font();
+
+  /* padding: 20px 0px;*/
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  align-content: center;
+}
+
+.main-text-item {
+  padding: 50px 20px;
+}
+
+.main-info-title {
+  text-align: center;
+}
+
+.link-choose-item {
+  @include basic-btn(220px, 80px);
+
+  &:hover .item-link-title {
+    color: $border-primory-color;
+  }
+}
+
+.item-link-title {
+  @include font(18px);
+
+  transition: 1s;
+}
+
+.main-info-img {
+  width: 280px;
+  object-fit: cover;
+
+  align-self: center;
+}
+
+@media (min-width: 620px) {
+  .main-info-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-info-desc {
+    padding: 20px;
+  }
+
+  .main-info-img {
+    padding-top: 20px;
+
+    width: 350px;
+  }
+}

@@ -1,0 +1,42 @@
+/* variables */
+$primory-color: #03a9f4;
+
+/* mixin */
+@import "mixin.scss";
+
+/* section gallery */
+
+.gallery {
+  padding: 50px 20px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-container {
+  min-width: 280px;
+  max-width: 450px;
+}
+
+.gallery-title {
+  padding-bottom: 20px;
+
+  @include font(20px, $primory-color);
+  text-align: center;
+}
+
+/* carousel */
+
+.carousel-item-border {
+  border-radius: 16px;
+}
+
+@media (min-width: 600px) {
+  button.carousel-control-prev.btn-slider-gallery {
+    translate: -40px 0px;
+  }
+
+  button.carousel-control-next.btn-slider-gallery {
+    translate: 40px 0px;
+  }
+}

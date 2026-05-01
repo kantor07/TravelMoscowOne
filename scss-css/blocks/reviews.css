@@ -1,0 +1,170 @@
+/* variables */
+/*mixin */
+/* variables */
+/* mixin */
+/* section reviews */
+.reviews {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews-container {
+  padding: 50px 0px;
+}
+
+.reviews-title {
+  padding-bottom: 20px;
+  font-family: "Gabriela", serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  color: #7b3f00;
+  text-align: center;
+}
+
+.review-author-name {
+  font-size: 18px;
+}
+
+.item-name,
+.guide-name,
+.review-date {
+  color: rgba(33, 37, 41, 0.75);
+}
+
+/* review-cart-slider */
+.review-cart-slider {
+  margin: 20px 5px;
+  padding: 0px;
+  align-items: center;
+  padding: 10px;
+  width: 270px;
+  min-height: 320px;
+  border-radius: 16px;
+  outline: 1px solid #03a9f4;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border: none;
+}
+
+.second-card,
+.third-card {
+  display: none;
+}
+
+.review-cart-text {
+  height: 300px;
+  font-family: "Gabriela", serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #7b3f00;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-text {
+  padding-top: 20px;
+  color: black;
+  flex-grow: 1;
+}
+
+.item-name,
+.guide-name,
+.review-date {
+  font-size: 14px;
+}
+
+.review-date {
+  text-align: end;
+}
+
+.span-guide-name {
+  padding-right: 5px;
+}
+
+.btn-carousel {
+  display: flex;
+  justify-content: end;
+}
+
+.btn-slider {
+  display: contents;
+}
+
+.arrow-left,
+.arrow-right {
+  width: 20px;
+  height: 20px;
+}
+
+.arrow-left {
+  background: url("../img/icon-arrow-left.png") no-repeat;
+  background-size: 100%;
+  translate: -10px 0px;
+}
+
+.arrow-right {
+  background: url("../img/icon-arrow-right.png") no-repeat;
+  background-size: 100%;
+  translate: 10px 0px;
+}
+
+/* review-cart */
+.review-cart {
+  margin: 20px 10px;
+  padding: 10px;
+  width: 100%;
+  min-height: 100%;
+  border-radius: 16px;
+  outline: 1px solid #03a9f4;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  font-family: "Gabriela", serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #7b3f00;
+  flex-direction: column;
+}
+
+@media (min-width: 420px) {
+  .review-cart-slider {
+    width: 330px;
+  }
+}
+@media (min-width: 620px) {
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    display: flex;
+    justify-content: space-around;
+  }
+  .second-card {
+    display: block;
+  }
+  .review-cart-slider {
+    width: 300px;
+  }
+  .btn-carousel {
+    margin-right: 20px;
+  }
+  .arrow-right {
+    translate: 20px 0px;
+  }
+  .arrow-left {
+    translate: -20px 0px;
+  }
+}
+@media (min-width: 700px) {
+  .review-cart-slider {
+    width: 315px;
+  }
+}
+@media (min-width: 1024px) {
+  .third-card {
+    display: block;
+  }
+}/*# sourceMappingURL=reviews.css.map */

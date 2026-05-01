@@ -1,0 +1,66 @@
+/* variables */
+$primory-color: #03a9f4;
+$main-background-color: #fff6ef;
+/* $main-background-color: #d7dcdf; */
+
+/* mixin */
+@import "mixin.scss";
+
+.gallery-page-container {
+  padding: 50px 0px;
+
+  display: flex;
+  text-align: center;
+}
+
+.gallery-img,
+.gallery-line {
+  margin: 20px;
+
+  width: 300px;
+  height: 220px;
+
+  transition: 0.5s;
+}
+
+.gallery-img {
+  border-radius: 16px;
+}
+
+.gallery-link {
+  width: 220px;
+  height: 50px;
+
+  display: contents;
+
+  text-decoration: none;
+
+  transition: 1s;
+  object-fit: cover;
+}
+
+.gallery-link-title {
+  @include font();
+}
+
+.mfp-title,
+.mfp-counter {
+  @include font(18px, $primory-color);
+}
+
+.mfp-zoom-out-cur,
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+  color: $primory-color;
+}
+
+@media (min-width: 620px) {
+  .gallery-page-container {
+    padding: 50px 10px;
+  }
+}
+
+@media (min-width: 700px) {
+  .gallery-page-container {
+    padding: 50px 50px;
+  }
+}
