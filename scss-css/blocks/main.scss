@@ -6,12 +6,9 @@ $main-background-color: #fff6ef;
 /* mixin */
 @import "mixin.scss";
 
-.main-info-container {
-  height: 200px;
-  background: url(../img/main-img.jpg) no-repeat;
-  background-size: 100%;
-
-  /* outline: 1px solid green; */
+.img-main-info {
+  height: 100%;
+  width: 100%;
 }
 
 .main-info-title,
