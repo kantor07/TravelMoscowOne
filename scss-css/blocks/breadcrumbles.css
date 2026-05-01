@@ -14,6 +14,10 @@
   list-style: none;
 }
 
+.menu-list-breadcrumbles {
+  min-width: 85px;
+}
+
 .menu-link-breadcrumbles,
 .menu-link-breadcrumbles-bold {
   font-family: "Gabriela", serif;

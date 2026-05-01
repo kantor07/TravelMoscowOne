@@ -1,0 +1,101 @@
+/* variables */
+$primory-color: #03a9f4;
+
+/* mixin */
+@import "mixin.scss";
+
+/* section item desc */
+
+.item-desc {
+  @include font(16px);
+}
+
+.item-text {
+  padding: 50px 20px;
+
+  font-size: 16px;
+}
+
+.basic-info {
+  padding: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  list-style-type: none;
+}
+
+.basic-info-list {
+  @include border-blue();
+
+  margin-bottom: 20px;
+}
+
+.items-link {
+  @include basic-btn();
+
+  &:hover .item-link-title {
+    color: $primory-color;
+  }
+}
+
+.item-link-title {
+  @include font(20px);
+
+  transition: 1s;
+}
+
+.basic-info-icon {
+  margin: 20px 0px 0px 5px;
+}
+
+.item-desc-img,
+.basic-info-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.item-desc-title {
+  padding: 25px 5px 5px 5px;
+}
+
+.item-desc-text {
+  width: 200px;
+
+  flex-grow: 1;
+  text-align: end;
+  align-content: center;
+
+  font-weight: 600;
+}
+
+/* item desc list */
+
+.item-desc-table {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item-desc-list {
+  padding: 10px 0px;
+}
+
+.item-desc-list-title {
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+@media (min-width: 420px) {
+  .item-cart {
+    width: 380px;
+  }
+}
+
+@media (min-width: 620px) {
+  .basic-info-list,
+  .items-link {
+    margin: 0px 0px 20px 20px;
+    width: 300px;
+  }
+}

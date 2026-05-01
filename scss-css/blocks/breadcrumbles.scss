@@ -16,6 +16,10 @@ $primory-color: #03a9f4;
   list-style: none;
 }
 
+.menu-list-breadcrumbles {
+  min-width: 85px;
+}
+
 .menu-link-breadcrumbles,
 .menu-link-breadcrumbles-bold {
   @include font(14px);
