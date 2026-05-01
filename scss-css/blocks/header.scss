@@ -171,11 +171,6 @@ $primory-color-border: #03a9f4;
     font-size: 25px;
   }
 
-  .logo-img {
-    width: 50px;
-    height: 50px;
-  }
-
   /* header menu */
 
   .burger {
@@ -199,16 +194,15 @@ $primory-color-border: #03a9f4;
     min-width: 460px;
 
     border-radius: inherit;
+    border-left-color: unset;
+    border-right-color: unset;
     outline: none;
+    border-style: unset;
   }
 
   .menu {
     display: flex;
     justify-content: space-between;
-  }
-
-  .list-menu {
-    position: fixed;
   }
 
   .menu-link,
@@ -230,8 +224,10 @@ $primory-color-border: #03a9f4;
   }
 
   .list-menu {
-    padding: 10px 10px 10px 20px;
-    width: 170px;
+    padding: 10px 10px 10px 10px;
+    position: fixed;
+    right: 295px;
+
     background-color: #ffffff;
     border: 1px solid $primory-color;
     border-radius: 16px;

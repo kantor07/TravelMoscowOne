@@ -160,10 +160,6 @@
   .title {
     font-size: 25px;
   }
-  .logo-img {
-    width: 50px;
-    height: 50px;
-  }
   /* header menu */
   .burger {
     display: none;
@@ -181,14 +177,14 @@
     margin: 0px;
     min-width: 460px;
     border-radius: inherit;
+    border-left-color: unset;
+    border-right-color: unset;
     outline: none;
+    border-style: unset;
   }
   .menu {
     display: flex;
     justify-content: space-between;
-  }
-  .list-menu {
-    position: fixed;
   }
   .menu-link,
   .link-list {
@@ -205,8 +201,9 @@
     display: none;
   }
   .list-menu {
-    padding: 10px 10px 10px 20px;
-    width: 170px;
+    padding: 10px 10px 10px 10px;
+    position: fixed;
+    right: 295px;
     background-color: #ffffff;
     border: 1px solid #7b3f00;
     border-radius: 16px;
